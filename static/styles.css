@@ -1,0 +1,20 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #212121;
+    color: white;
+
+}
+
+#title {
+    color: yellow;
+}
+
+#pattern {
+    height: 100px;
+    background: repeating-linear-gradient(-45deg, #212121, #212121 20px, yellow 20px, yellow 60px);
+}
+
+/* Card icon */
+.card .bi {
+    font-size: large;
+}

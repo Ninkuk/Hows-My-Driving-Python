@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block heading%}How's My Driving?{% endblock heading %}
+
+<!-- page content -->
+{% block content %}
+<h2 class="m-0">
+    <a href="/faq" class="link-secondary link-underline link-underline-opacity-0">
+        OBD-II Data Analysis Dashboard
+    </a>
+</h2>
+
+<div class="col-12 col-sm-10 col-md-8 col-lg-6 m-auto mt-5 text-start">
+    <!-- Custom trip input form -->
+    <form id="inputForm" method="post" enctype="multipart/form-data">
+        <p class="mb-2 text-body-secondary">
+            Import you own CSV file(s) from
+            <a href="https://www.carscanner.info/" class="link-secondary" target="_blank">Car Scanner ELM OBD2</a>
+        </p>
+        <div class="input-group">
+            <input type="file" name="csv_file" accept=".csv" class="form-control" id="file" required/>
+            <button type="submit" value="custom_input" class="btn btn-outline-secondary">
+                <i class="bi bi-upload"></i>
+                Upload
+            </button>
+        </div>
+    </form>
+
+    <!-- Demo trip cards -->
+    <div>
+        <p class="mb-2 mt-5 text-body-secondary">or try a demo trip...</p>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" style="font-size: medium;">North Phoenix to Tempe</h5>
+                        <p class="card-text" style="font-size: small;">
+                            Highway Driving with full tank. No cruise control.
+                        </p>
+                        <a href="/dashboard/phoenix-to-tempe"
+                            class="btn btn-sm btn-outline-secondary stretched-link w-100">
+                            Go!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock content %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+{% endblock js %}

@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block title %} FAQ {% endblock %}
+{% block heading %} FAQ {% endblock %}
+{% block content %}
+
+<div class="accordion accordion-flush" id="accordionFlush">
+    {% for faq in faqs %}
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target=#{{loop.index}} aria-expanded="false" aria-controls="flush-collapseOne">
+                {{faq['question']}}
+            </button>
+        </h2>
+        <div id={{loop.index}} class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+            <div class="accordion-body">
+                {{faq['answer']}}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

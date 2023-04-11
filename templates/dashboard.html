@@ -1,0 +1,155 @@
+{% extends 'layout.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<!-- <div class="text-start">
+    <h1 class="fw-bold">Your trip analysis</h1>
+</div> -->
+<div class="row gy-2 justify-content-center">
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <i class="bi bi-geo-alt-fill"></i>
+                <h5 class="card-title m-0 mt-2 fw-bold">{{trip_info.distance}}</h5>
+                <div class="card-text text-secondary">miles</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <i class="bi bi-clock-fill"></i>
+                <h5 class="card-title m-0 mt-2 fw-bold">{{trip_info.time}}</h5>
+                <div class="card-text text-secondary">minutes</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <i class="bi bi-fuel-pump-fill"></i>
+                <h5 class="card-title m-0 mt-2 fw-bold">{{trip_info.mpg}}</h5>
+                <div class="card-text text-secondary">mpg</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <i class="bi bi-speedometer"></i>
+                <h5 class="card-title m-0 mt-2 fw-bold">{{trip_info.speed}}</h5>
+                <div class="card-text text-secondary">mph</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" style="font-size: x-small">$</span>
+                    <input type="number" class="form-control" id="fuelPrice" placeholder="4.3" value="4.3" />
+                    <span class="input-group-text" style="font-size: x-small">/ gallon</span>
+                </div>
+
+                <p class="d-none" id="fuelConsumed">{{trip_info.fuel_consumed}}</p>
+
+                <h5 class="card-title m-0 mt-2 fw-bold">
+                    $<span id="tripCost"></span>
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-1 mb-5 text-start gy-4">
+    <div class="col-12 col-md-6">
+        <div class="card h-100">
+            <img src="{{rpm_img}}" class="card-img-top" />
+            <div class="card-body">
+                <h2 class="card-title fs-5 fw-bold">Engine RPM</h2>
+                <p class="card-text" style="font-size: small">
+                    Engine RPM stands for "Revolutions Per Minute" and indicates how fast
+                    the engine is running.
+                    <br><br>
+                    <span class="text-danger"> > 5000 RPM</span>: High rpm = Higher fuel
+                    consumption
+                    <br>
+                    <span class="text-success"> 1000 - 3000 RPM</span>: Ideal range
+                    <br>
+                    <span class="text-warning">
+                        < 1000 RPM </span>: Idling your car for
+                            too long wastes fuel <br><br>
+                            <a href="" class="text-secondary">Read More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="card h-100">
+            <img src="{{ideal_speed_img}}" class="card-img-top" />
+            <div class="card-body">
+                <h2 class="card-title fs-5 fw-bold">Vehicle Speed</h2>
+                <p class="card-text" style="font-size: small">
+                    The faster a vehicle travels, the more air it must push out of the way, which can increase
+                    aerodynamic drag and require more energy from the engine to maintain the speed.
+                    <br><br>
+                    <span class="text-danger"> > 50 MPH</span>: Higher speeds significantly reduce fuel economy.
+                    <br>
+                    <span class="text-success"> 50 MPH</span>: Ideal speed for most cars
+                    <br>
+                    <span class="text-warning">
+                        < 50 MPH </span>: Low speeds (especially
+                            < 20mph) are good but not ideal. <br><br>
+                                <a href="" class="text-secondary">Read More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="card h-100">
+            <img src="{{acc_img}}" class="card-img-top" />
+            <div class="card-body">
+                <h2 class="card-title fs-5 fw-bold">Driving Dynamics</h2>
+                <p class="card-text" style="font-size: small">
+                    Rapid acceleration and harsh braking can reduce fuel efficiency, while smooth, gradual acceleration
+                    and deceleration can help maximize fuel economy.
+                    Coasting, or letting the vehicle slow down naturally by taking the foot off the accelerator, can
+                    also save fuel.
+                    <br><br>
+                    <span class="text-danger">Rapid acceleration</span> can cause the engine to work harder, burning
+                    more fuel to achieve the desired speed.
+                    <br>
+                    <span class="text-success">Coasting</span> or letting the vehicle slow down naturally by taking the
+                    foot off the accelerator, can also save fuel.
+                    <br>
+                    <span class="text-warning">Harsh braking</span> can waste energy by converting the vehicle's
+                    momentum into heat, which is dissipated through the brakes.
+                    <br><br>
+                    <a href="" class="text-secondary">Read More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="card h-100">
+            <img src="{{rpm_throttle}}" class="card-img-top" />
+            <div class="card-body">
+                <h2 class="card-title fs-5 fw-bold">Driving Dynamics</h2>
+                <p class="card-text" style="font-size: small">
+                    The throttle regulates the amount of air that flows into the engine to maintain the desired RPM.
+                    This graph shows how efficient you are at coasting and maintaing the desired RPMs.
+                    <br><br>
+                    <a href="" class="text-secondary">Read More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+{% endblock js %}

@@ -1,0 +1,44 @@
+CarScanner Dashboard Sensors (10 panel dashboard)
+# Vehicle Speed
+# Engine RPM
+# Distance Travelled
+# Distance to Empty
+# Fuel Used
+# Throttle Position
+# Vehicle Acceleration
+# Instant engine power (hp)
+# Intake Air Temperature
+# Altitude
+
+Total Sensors Collected (linked sensors are included in the data)
+# Time
+# Altitude
+# Average fuel consumption (MPG)
+# Average fuel consumption (total) (MPG)
+# Average fuel consumption 10 sec (MPG)
+# Average speed (mph)
+# Average speed (GPS) (mph)
+# Calculated instant fuel consumption (MPG)
+# Calculated instant fuel rate (gal./h)
+# Distance to empty (miles)
+# Distance travelled (miles)
+# Distance travelled (total) (miles)
+# Engine Fuel Rate (g/sec)
+# Engine RPM (rpm)
+# Engine RPM x1000 (rpm)
+# Fuel economizer (based on fuel system status and throttle position) ()
+# Fuel level input (%) (%)
+# Fuel level input (V) (gallon)
+# Fuel used (gallon)
+# Fuel used (total) (gallon)
+# Fuel used price ($)
+# Fuel used price (total) ($)
+# Instant engine power (based on fuel consumption) (hp)
+# Intake air temperature (℉)
+# Speed (GPS) (mph)
+# Throttle position (%)
+# Vehicle acceleration (g)
+# Vehicle Fuel Rate (g/sec)
+# Vehicle speed (mph)
+# Latitude
+# Longtitude
