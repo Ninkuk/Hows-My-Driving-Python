@@ -11,6 +11,10 @@ cd howsmydriving
 2. Create and activate a [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment from the environment.yml file.
 ```bash
 conda env create -f environment.yml
+
+# or use environment.txt
+conda create --name <env> --file environment.txt
+
 conda activate howsmydriving
 ```
 
