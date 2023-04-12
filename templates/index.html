@@ -18,7 +18,7 @@
             <a href="https://www.carscanner.info/" class="link-secondary" target="_blank">Car Scanner ELM OBD2</a>
         </p>
         <div class="input-group">
-            <input type="file" name="csv_file" accept=".csv" class="form-control" id="file" required/>
+            <input type="file" name="csv_file" accept=".csv" class="form-control" id="file" required />
             <button type="submit" value="custom_input" class="btn btn-outline-secondary">
                 <i class="bi bi-upload"></i>
                 Upload
@@ -29,16 +29,42 @@
     <!-- Demo trip cards -->
     <div>
         <p class="mb-2 mt-5 text-body-secondary">or try a demo trip...</p>
-        <div class="row">
+        <div class="row gy-3">
             <div class="col-12 col-md-6">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title fw-bold" style="font-size: medium;">North Phoenix to Tempe</h5>
                         <p class="card-text" style="font-size: small;">
-                            Highway Driving with full tank. No cruise control.
+                            Highway Driving with full tank.
                         </p>
                         <a href="/dashboard/phoenix-to-tempe"
                             class="btn btn-sm btn-outline-secondary stretched-link w-100">
+                            Go!
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" style="font-size: medium;">Grocery Run</h5>
+                        <p class="card-text" style="font-size: small;">
+                            Neighbourhood driving.
+                        </p>
+                        <a href="/dashboard/grocery-run" class="btn btn-sm btn-outline-secondary stretched-link w-100">
+                            Go!
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" style="font-size: medium;">Idling (20 minutes)</h5>
+                        <p class="card-text" style="font-size: small;">
+                            Idling from cold start.
+                        </p>
+                        <a href="/dashboard/idling-20" class="btn btn-sm btn-outline-secondary stretched-link w-100">
                             Go!
                         </a>
                     </div>
