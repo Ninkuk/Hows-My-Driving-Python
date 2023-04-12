@@ -74,7 +74,7 @@ def faq():
     Returns:
         Any: render_template('faq.html')
     """
-    return render_template('faq.html', faqs=json.load(open('static/faq.json')))
+    return render_template('faq.html')
 
 
 @app.errorhandler(404)

@@ -3,21 +3,59 @@
 {% block heading %} FAQ {% endblock %}
 {% block content %}
 
-<div class="accordion accordion-flush" id="accordionFlush">
-    {% for faq in faqs %}
+<div class="accordion text-start" id="accordionExample">
     <div class="accordion-item">
         <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target=#{{loop.index}} aria-expanded="false" aria-controls="flush-collapseOne">
-                {{faq['question']}}
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                What is OBD-II?
             </button>
         </h2>
-        <div id={{loop.index}} class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+        <div id="collapseOne" class="accordion-collapse collapse show">
             <div class="accordion-body">
-                {{faq['answer']}}
+                OBD 2 stands for On-Board Diagnostics 2. It is a standardized system for diagnosing and reporting
+                malfunctions in vehicles. OBD 2 is a set of protocols and standards that allows car owners and mechanics
+                to access diagnostic information and troubleshoot problems related to the engine, transmission, and
+                other systems in a vehicle.
             </div>
         </div>
     </div>
-    {% endfor %}
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How do I use this app?
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                First collect your trip data using an OBD-II scanner. Then, export it as CSV and upload it on the home page.
+                <br><br>
+                For best results follow this tutorial:
+                <a href="https://www.youtube.com/watch?v=GSSOe9I7roo">Collect Automotive Data</a>
+                <br>
+                Scanner: <a href="https://a.co/d/9YJaLyI">ELM 327 Bluetooth Scanner</a> 
+                <br>
+                Logger App: <a href="https://www.carscanner.info/">Car Scanner ELM OBD2</a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div> -->
 </div>
 {% endblock content %}
