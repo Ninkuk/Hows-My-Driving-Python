@@ -1,7 +1,7 @@
 # How's My Driving?
 An OBD-II Trip Analysis Dashboard
 <br>
-<img src="https://user-images.githubusercontent.com/20276256/231506893-ccc1d20c-0347-407c-9f0e-6bced053d96a.png" width="1000" />
+<img src="https://user-images.githubusercontent.com/20276256/231508053-89862e6f-62df-41a5-aae4-5847ff1bd681.png" width="1000" />
 
 ## FAQ
 ### What is OBD-II?
@@ -18,20 +18,9 @@ Logger App: [Car Scanner ELM OBD2](https://www.carscanner.info/)
 
 ### What kind of analysis can I expect?
 1. Speed analysis: OBD-II data can be used to track the speed of the vehicle during a trip. This data can be used to analyze the driver's speed behavior, including speeding, rapid acceleration, and hard braking.
-
-<img src="https://user-images.githubusercontent.com/20276256/231359282-7e16f3b1-5c89-4a64-b9e6-aa0b5fcacbb1.png" width="500"/>
-
 2. Fuel efficiency analysis: OBD-II data can provide information on fuel consumption, including fuel economy, fuel level, and fuel consumption rate. This data can help you optimize routes and reduce fuel costs.
-
-<img src="https://user-images.githubusercontent.com/20276256/231359105-9c449dad-c9a1-42a1-92ed-b09e09d45af2.png" width="500" />
-
 3. Trip analysis: OBD-II data can provide information on the length of a trip, average speed, distance traveled, and time spent idling.
-
-<img src="https://user-images.githubusercontent.com/20276256/231359787-fe3812cf-d364-4515-8092-72733917cafc.png" width="1000" />
-
 4. Driver behavior analysis: OBD-II data can provide information on driver behavior, including aggressive driving, hard braking, rapid acceleration, and excessive idling.
-
-<img src="https://user-images.githubusercontent.com/20276256/231360094-df5f8801-7c55-46d7-acfd-54ced7c16618.png" width="500" />
 
 ## Installation
 1. Clone the repository
