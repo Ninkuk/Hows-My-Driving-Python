@@ -1,7 +1,5 @@
 # How's My Driving?
 An OBD-II Trip Analysis Dashboard
-<br>
-<img src="https://user-images.githubusercontent.com/20276256/231508053-89862e6f-62df-41a5-aae4-5847ff1bd681.png" width="1000" />
 
 ## FAQ
 ### What is OBD-II?
