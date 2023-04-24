@@ -48,7 +48,7 @@ The application should now be running on http://localhost:5000.
 ## Usage
 <img width="600" src="https://user-images.githubusercontent.com/20276256/234079255-337b2d83-4e50-46cb-84f9-da04ef7520da.png">
 
-### Uploading custom CSV (see [Data Collection](https://github.com/Ninkuk/Hows-My-Driving/edit/master/README.md#how-do-i-collect-my-own-data) for more details)
+### Uploading custom CSV (see [Data Collection](https://github.com/Ninkuk/Hows-My-Driving#how-do-i-collect-my-own-data) for more details)
 Navigate to the [home page](https://obd.ninkuk.com/) and click on *Browse...*, then select the CSV you want to upload and click *Upload*. Wait for the server to finish processing and then you will be redirected to the trip analysis dashboard.
 ### Demo Mode
 Navigate to the [home page](https://obd.ninkuk.com/) and scroll down to the *or try a demo trip...* section. Here you can see the list of demo trips available for you to explore. Simply click on *Go!* for any of the trip and you will be redirected to the trip analysis dashboard.
